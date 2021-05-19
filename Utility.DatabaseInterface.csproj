@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48</TargetFrameworks>
+    <Authors>Andy Woodward</Authors>
+    <Company>Woodward Coding Solutions</Company>
+    <Copyright>Copyright © Woodward Coding 2021</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/an-d-uu/Utility.DatabaseInterface</RepositoryUrl>
+    <PackageReleaseNotes>Release Notes.md</PackageReleaseNotes>
+    <Version>1.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Release Notes.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  
+</Project>
