@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Utility.DatabaseInterface
 {
-    class DB_Interface
+    public class DB_Interface
     {
         public DB_Interface() : base()
         {
