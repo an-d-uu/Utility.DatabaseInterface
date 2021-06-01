@@ -1,4 +1,8 @@
-﻿using System.Data.SqlClient;
+﻿#if NET5_0_OR_GREATER
+using Microsoft.Data.SqlClient;
+#else
+using System.Data.SqlClient;
+#endif
 using System.Data.Common;
 using System;
 using System.Data;
@@ -913,7 +917,7 @@ namespace Utility.DatabaseInterface
                                 foreach (SqlParameter _sqlParameter in ParameterList)
                                     cmd.Parameters.Add(_sqlParameter);
                             }
-                           cmd.Connection.Open();
+                            cmd.Connection.Open();
                             using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd))
                             {
 

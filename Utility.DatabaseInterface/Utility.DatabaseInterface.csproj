@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net50</TargetFrameworks>
+    <Authors>Andy Woodward</Authors>
+    <Company>Woodward Coding Solutions</Company>
+    <Copyright>Copyright © Woodward Coding 2021</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/an-d-uu/Utility.DatabaseInterface</RepositoryUrl>
+    <PackageReleaseNotes>Release Notes.md</PackageReleaseNotes>
+    <Version>1.1.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Release Notes.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <!--<ItemGroup Condition="'$(TargetFramework)' == 'net46'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net47'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net471'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>-->
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net50'">
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>2.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  
+</Project>
