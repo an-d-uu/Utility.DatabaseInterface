@@ -130,7 +130,6 @@ namespace Utility.DatabaseInterface
         }
 #endif
 
-
         /// <summary>
         ///     ''' Runs a SQL statement and returns Nothing upon successful completion
         ///     ''' </summary>
@@ -1350,6 +1349,18 @@ namespace Utility.DatabaseInterface
         #endregion
 
         #region "Parameter Items"
+        private SqlParameter[] ArrayList2SqlParameterArray(ArrayList list)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[list.Count];
+            Int32 cnt = -1;
+            foreach(SqlParameter sqlParameter in list)
+            {
+                cnt += 1;
+                sqlParameters[cnt] = sqlParameter;
+            }
+
+            return sqlParameters;
+        }
         /// <summary>
 
         ///     ''' Removes a Parameter from the supplied ParameterList by Reference
