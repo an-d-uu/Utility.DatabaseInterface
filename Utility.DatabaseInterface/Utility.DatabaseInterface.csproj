@@ -10,7 +10,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/an-d-uu/Utility.DatabaseInterface</RepositoryUrl>
     <PackageReleaseNotes>Release Notes.md</PackageReleaseNotes>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

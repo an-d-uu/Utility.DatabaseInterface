@@ -7,7 +7,7 @@ using System.Data.Common;
 using System;
 using System.Data;
 using System.Collections;
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
 using System.Threading.Tasks;
 #endif
 
@@ -18,6 +18,11 @@ namespace Utility.DatabaseInterface
         public DB_Interface() : base()
         {
             ConnectionString = string.Empty;
+        }
+
+        public DB_Interface(string connectionString) : base()
+        {
+            ConnectionString = connectionString;
         }
         #region "Properties"
         /// <summary>
@@ -80,7 +85,7 @@ namespace Utility.DatabaseInterface
 
             return _returnVal;
         }
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Runs a SQL statement and returns Nothing upon successful completion
         ///     ''' </summary>
@@ -178,7 +183,7 @@ namespace Utility.DatabaseInterface
             return _returnVal;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Runs a SQL statement and returns Nothing upon successful completion
         ///     ''' </summary>
@@ -289,7 +294,7 @@ namespace Utility.DatabaseInterface
             return _dt;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns a datatable
         ///     ''' </summary>
@@ -404,7 +409,7 @@ namespace Utility.DatabaseInterface
             return _dt;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided SQL and returns a datatable
         ///     ''' </summary>
@@ -519,7 +524,7 @@ namespace Utility.DatabaseInterface
             return _returnVal;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns either Success or Error
         ///     ''' </summary>
@@ -633,7 +638,7 @@ namespace Utility.DatabaseInterface
             return dataRecord;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns the DbDataRecord
         ///     ''' </summary>
@@ -747,7 +752,7 @@ namespace Utility.DatabaseInterface
             return Result;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns an Object
         ///     ''' </summary>
@@ -848,7 +853,7 @@ namespace Utility.DatabaseInterface
             return Result;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided sql statement and returns the value specified in the sql statement.
         ///     ''' </summary>
@@ -939,7 +944,7 @@ namespace Utility.DatabaseInterface
             return _ds;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns a DataSet
         ///     ''' </summary>
@@ -1020,7 +1025,7 @@ namespace Utility.DatabaseInterface
             return returnValue;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns a String Array
         ///     ''' </summary>
@@ -1084,7 +1089,7 @@ namespace Utility.DatabaseInterface
             return returnValue;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns an Object
         ///     ''' </summary>
@@ -1143,7 +1148,7 @@ namespace Utility.DatabaseInterface
             return _s;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns an ArrayList
         ///     ''' </summary>
@@ -1209,7 +1214,7 @@ namespace Utility.DatabaseInterface
             return _s;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns an ArrayList
         ///     ''' </summary>
@@ -1294,7 +1299,7 @@ namespace Utility.DatabaseInterface
             return _result;
         }
 
-#if NET45_OR_GREATER
+#if NET45_OR_GREATER || NET5_0_OR_GREATER
         /// <summary>
         ///     ''' Executes the provided StoredProcedure and returns an Object with the output parameters rules in it
         ///     ''' </summary>
