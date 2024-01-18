@@ -13,13 +13,23 @@ using System.Threading.Tasks;
 
 namespace Utility.DatabaseInterface
 {
+    /// <summary>
+    /// DB_Interface class simplifies the process of pulling data from Microsoft SQL Server.
+    /// </summary>
     public class DB_Interface
     {
+        /// <summary>
+        /// Class initialization setting the ConnectionString to string.empty instead of null.
+        /// </summary>
         public DB_Interface() : base()
         {
             ConnectionString = string.Empty;
         }
 
+        /// <summary>
+        /// Initialization with optional connectionString parameter.
+        /// </summary>
+        /// <param name="connectionString">The connection string to your database.</param>
         public DB_Interface(string connectionString) : base()
         {
             ConnectionString = connectionString;
